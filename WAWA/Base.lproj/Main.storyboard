@@ -1,24 +1,965 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WAWA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="72F-f3-pp7" userLabel="FaceButtonView">
+                                <rect key="frame" x="20" y="698" width="374" height="175"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hfc-dn-4Kz">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" id="cwe-38-YIH">
+                                                <rect key="frame" x="0.0" y="0.0" width="748" height="140"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" id="sA9-ZV-z8J">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="140"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwS-zx-38L" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="83" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Angry with Fang"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fod-2U-aXI"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FE-Kl-0Hj" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="8" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Awe"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y8S-zA-mY0"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Va0-ZC-ikB" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="155" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Blank"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Zz-TG-gV4"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VX-0R-JPM" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="229" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Calm"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kgz-QD-Vwq"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDf-4F-aol" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="302" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Cheeky"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FL1-sH-l88"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5w-zq-nLR" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="8" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Concerned Fear"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9sZ-Zf-en0"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abN-ap-VO9" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="83" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Concerned"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aBZ-w5-deh"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3w-6r-bY6" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="156" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Contempt"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qMU-Xk-WNi"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xco-UX-Ofu" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="229" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Cyclops"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j92-1E-0WX"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrm-ea-LLI" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="302" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Driven"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UGd-cr-GSv"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <viewLayoutGuide key="safeArea" id="Gmf-Bt-diL"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" id="L81-uM-pw6">
+                                                        <rect key="frame" x="374" y="0.0" width="374" height="140"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntk-AL-et7" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="83" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Eating Happy"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n5R-te-uWB"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8Z-6I-qbW" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="8" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Eyes Closed"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cMz-Xk-vpj"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smx-iD-8PA" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="155" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Fear"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mij-CW-Z2p"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXn-Nw-aTy" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="229" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Hectic"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mfx-vW-Zoz"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hb-wr-zWb" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="302" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Loving Grin 1"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yub-TB-dgd"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDK-kX-5kj" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="8" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Loving Grin 2"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uaf-ZB-pfw"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2B-Jv-eXK" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="83" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Old"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d54-bz-Q5R"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzq-gB-PEv" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="156" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Rage"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VSa-fb-xvM"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lT1-4v-sUa" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="229" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Serious"/>
+                                                                <connections>
+                                                                    <action selector="faceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uI8-V7-Vi8"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEp-Vn-0MH" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="302" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Smile Big"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <viewLayoutGuide key="safeArea" id="Cts-fZ-iKd"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="yJB-xR-HGi"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                                        <size key="value" width="748" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="INQ-R4-Z63"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="Tfh-Vh-JJi"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                                <size key="value" width="748" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </scrollView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="Bnd-Nv-mFO"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9nh-ll-y67">
+                                <rect key="frame" x="0.0" y="142" width="414" height="509"/>
+                            </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0XH-Z9-Pvt">
+                                <rect key="frame" x="20" y="659" width="374" height="32"/>
+                                <segments>
+                                    <segment title="Glaases"/>
+                                    <segment title="Clothes"/>
+                                    <segment title="Face"/>
+                                    <segment title="Hair"/>
+                                </segments>
+                                <connections>
+                                    <action selector="change:" destination="BYZ-38-t0r" eventType="valueChanged" id="atR-vN-zMS"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" id="Lvk-Of-5ax">
+                                <rect key="frame" x="0.0" y="142" width="414" height="509"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Afro" translatesAutoresizingMaskIntoConstraints="NO" id="5Rt-bW-Uhd">
+                                        <rect key="frame" x="26" y="44" width="388" height="207"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blazer Black Tee" translatesAutoresizingMaskIntoConstraints="NO" id="naH-3f-SXH">
+                                        <rect key="frame" x="13" y="228" width="374" height="184"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Angry with Fang" translatesAutoresizingMaskIntoConstraints="NO" id="X6v-o0-tFJ">
+                                        <rect key="frame" x="110" y="105" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Eyepatch" translatesAutoresizingMaskIntoConstraints="NO" id="I5D-gL-usX">
+                                        <rect key="frame" x="146" y="123" width="130" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="um5-mQ-Ysb"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="Bfr-yM-Aq0" userLabel="HairButtonView">
+                                <rect key="frame" x="20" y="698" width="374" height="175"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7SV-8X-AuN">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" id="wyl-Gm-vew">
+                                                <rect key="frame" x="0.0" y="0.0" width="748" height="140"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" id="mmI-QS-joc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="140"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukq-PA-mxf" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="83" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Bangs"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7iY-7p-VXv"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNg-zt-mcm" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="8" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Afro"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kwq-M9-UPl"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnF-KS-Ogn" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="155" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Bear"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wKN-ZO-Wdg"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irS-26-rhl" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="229" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Bun"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GRG-7z-i7R"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vN-WI-1V4" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="302" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Cornrows"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mld-PZ-YcU"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ws-T0-sJh" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="8" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Bangs 2"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nxm-wL-usv"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Kx-hu-u5A" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="83" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Bantu Knots"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oFM-Mo-hkB"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tf-t4-3T7" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="156" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Bun 2"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XGw-pj-qal"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfE-wd-dV2" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="229" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Buns"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZQS-86-4bB"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAd-mi-5iP" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="302" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Cornrows 2"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rct-qC-gaL"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <viewLayoutGuide key="safeArea" id="jR6-Fe-fM8"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" id="aak-Ui-Cx1">
+                                                        <rect key="frame" x="374" y="0.0" width="374" height="140"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awb-fD-9ia" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="83" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Flat Top"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9h1-AH-HB7"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwC-di-fZd" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="8" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Flat Top Long"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W8d-Of-dhO"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7Q-Zb-P8s" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="155" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Gray Bun"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D3X-hb-4Jr"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dg-Kg-ck2" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="229" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Gray Medium"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="agI-Rj-MQ2"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOu-3B-Ra9" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="302" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Gray Short"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cmO-Gp-po0"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Fe-Id-sAP" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="8" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="hat-beanie"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ggo-Pj-fzo"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DH9-SR-Dap" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="83" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="hat-hip"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ryb-R1-AUD"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhH-9W-763" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="156" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Hijab"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OYN-Jm-hsQ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsn-0f-Wz4" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="229" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Long Afro"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TGY-uL-hSZ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V35-yM-551" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="302" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Long Bangs"/>
+                                                                <connections>
+                                                                    <action selector="hairButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mIP-0e-z6z"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <viewLayoutGuide key="safeArea" id="HYw-1m-uev"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="BFD-E2-8WH"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                                        <size key="value" width="748" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="Z2q-RX-lhT"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="E7v-er-ljA"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                                <size key="value" width="748" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </scrollView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="98G-ow-X0S"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="bmS-3n-ew3" userLabel="GlassesButtonView">
+                                <rect key="frame" x="20" y="698" width="374" height="175"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="7bW-Q6-ApE">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PaF-mI-31g" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                <rect key="frame" x="83" y="2" width="65" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="" image="Glasses"/>
+                                                <connections>
+                                                    <action selector="glassesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x0J-3E-BqF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOs-B5-nUT" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="2" width="65" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="" image="Eyepatch"/>
+                                                <connections>
+                                                    <action selector="glassesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rky-ZY-kkA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0E-rx-9gc" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                <rect key="frame" x="155" y="2" width="65" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="" image="Glasses 2"/>
+                                                <connections>
+                                                    <action selector="glassesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E6F-Ht-A8e"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uV1-tQ-jJQ" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                <rect key="frame" x="229" y="2" width="65" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="" image="Glasses 3"/>
+                                                <connections>
+                                                    <action selector="glassesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h10-eu-kNe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Stl-jz-psu" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                <rect key="frame" x="302" y="2" width="65" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="" image="Glasses 4"/>
+                                                <connections>
+                                                    <action selector="glassesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Nj-nC-QQM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFW-dz-KBy" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="80" width="65" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="" image="Glasses 5"/>
+                                                <connections>
+                                                    <action selector="glassesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0SY-ga-ojN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQZ-eH-0DW" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                <rect key="frame" x="83" y="80" width="65" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="" image="Sunglasses"/>
+                                                <connections>
+                                                    <action selector="glassesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cLF-IT-ATM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r01-cj-9IR" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                <rect key="frame" x="156" y="80" width="65" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="" image="Sunglasses 2"/>
+                                                <connections>
+                                                    <action selector="glassesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wox-vr-Bxz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="oTl-81-hj3"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="7bT-h7-5Ij"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="s3k-F0-C7A" userLabel="ClothesButtonView">
+                                <rect key="frame" x="20" y="698" width="374" height="175"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YTQ-iT-5m3">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" id="Pg6-MK-HUF">
+                                                <rect key="frame" x="0.0" y="0.0" width="1122" height="140"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" id="qri-Km-PQa">
+                                                        <rect key="frame" x="748" y="0.0" width="374" height="140"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7N-3z-Sg3" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="83" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Sweater Dots"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aya-sm-K31"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6p-HE-yv5" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="8" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Striped Tee"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Zy-7k-Q8B"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrq-9W-lVJ" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="155" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Sweater"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UbZ-QM-WD0"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C63-6i-2kI" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="229" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Tee 1"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="75t-cH-vz2"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjM-vZ-tt2" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="302" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Tee 2"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aeu-N2-Ccl"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvl-vZ-JCh" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="8" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Tee Arms Crossed"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IJg-o9-CqJ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPd-Ch-6ah" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="83" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Tee Selena"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dCM-xL-IOk"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxC-ld-HAA" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="156" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Thunder T-Shirt"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N1R-ty-srk"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvx-v3-eBA" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="229" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Turtleneck"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dht-fo-Hlh"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buL-LJ-VT0" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="302" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Whatever"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gz3-S6-eP3"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <viewLayoutGuide key="safeArea" id="SFv-f5-IF1"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" id="hZJ-Az-cmU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="140"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diL-aR-dcM" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="83" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Button Shirt 1"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="13v-ks-pTl"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhN-pw-qtT" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="8" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Blazer Black Tee"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0d8-Sj-D7V"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7P-Q0-s3W" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="155" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Button Shirt 2"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfT-Zk-c5I"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fic-j2-6QV" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="229" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Coffee"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wAv-WD-Vz9"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxN-ob-MQD" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="302" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Device"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WQl-3M-1iO"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QA6-ka-a2k" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="8" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Dress"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2KB-LS-3Go"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71M-Rx-AMi" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="83" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Explaining"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gGQ-x8-WfJ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hte-xv-bt5" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="156" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Fur Jacket"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XlR-kx-bBy"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbv-sg-1Jd" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="229" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Gaming"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mWp-fJ-zXQ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5f-Az-clA" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="302" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Gym Shirt"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eh6-DR-ij4"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <viewLayoutGuide key="safeArea" id="bL9-ku-HLr"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" id="V2p-kY-bEs">
+                                                        <rect key="frame" x="374" y="0.0" width="374" height="140"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="432-R9-XBn" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="83" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Killer"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="anX-qS-gnc"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2N-as-qHa" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="8" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Hoodie"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aaq-3P-8F9"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqR-PY-ufz" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="155" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Macbook"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RCB-Rk-tnQ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyS-cC-KgK" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="229" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Paper"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ar-FP-7f9"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPk-oq-buf" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="302" y="2" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Pointing Up"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M3F-fJ-kQm"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wl3-FQ-xYw" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="8" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Polka Dot Jacket"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B4P-ol-bHj"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqL-mi-tLY" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="83" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Polo and Sweater"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nb4-n8-QSg"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLv-zL-csU" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="156" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Shirt and Coat"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nVP-c1-43X"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkr-M2-eEo" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="229" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Sporty Tee"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bMN-eA-K9b"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUz-1t-mUU" customClass="ImageButton" customModule="WAWA" customModuleProvider="target">
+                                                                <rect key="frame" x="302" y="80" width="65" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="" image="Striped Pocket Tee"/>
+                                                                <connections>
+                                                                    <action selector="clothesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7mX-gd-uCi"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <viewLayoutGuide key="safeArea" id="Af8-yD-9vi"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="Zdo-Sf-eXm"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                                        <size key="value" width="1122" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="833-wJ-krY"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="HWX-SS-8uW"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                                <size key="value" width="748" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </scrollView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="jgn-qe-vdt"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0XH-Z9-Pvt" firstAttribute="centerX" secondItem="9nh-ll-y67" secondAttribute="centerX" id="5mt-Or-kBz"/>
+                            <constraint firstItem="0XH-Z9-Pvt" firstAttribute="top" secondItem="9nh-ll-y67" secondAttribute="bottom" constant="8" id="Q6E-Yb-zAZ"/>
+                            <constraint firstItem="72F-f3-pp7" firstAttribute="top" secondItem="0XH-Z9-Pvt" secondAttribute="bottom" constant="8" id="bGm-q4-OlU"/>
+                            <constraint firstItem="9nh-ll-y67" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="98" id="hNc-rp-ZaC"/>
+                            <constraint firstItem="9nh-ll-y67" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ror-KM-RGx"/>
+                            <constraint firstItem="0XH-Z9-Pvt" firstAttribute="trailing" secondItem="bmS-3n-ew3" secondAttribute="trailing" id="uhV-ph-sjm"/>
+                            <constraint firstItem="0XH-Z9-Pvt" firstAttribute="leading" secondItem="72F-f3-pp7" secondAttribute="leading" id="xhh-fU-GQt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="clothesImageView" destination="naH-3f-SXH" id="QlR-a8-hxt"/>
+                        <outlet property="faceImageView" destination="X6v-o0-tFJ" id="mTU-yY-yYf"/>
+                        <outlet property="glassesImageView" destination="I5D-gL-usX" id="L7k-6D-Pia"/>
+                        <outlet property="hairImageView" destination="5Rt-bW-Uhd" id="CwI-dr-WDZ"/>
+                        <outletCollection property="buttonViews" destination="bmS-3n-ew3" collectionClass="NSMutableArray" id="T34-Pp-mL3"/>
+                        <outletCollection property="buttonViews" destination="s3k-F0-C7A" collectionClass="NSMutableArray" id="vwn-bB-T8B"/>
+                        <outletCollection property="buttonViews" destination="72F-f3-pp7" collectionClass="NSMutableArray" id="MKJ-dO-vtM"/>
+                        <outletCollection property="buttonViews" destination="Bfr-yM-Aq0" collectionClass="NSMutableArray" id="6zb-BT-VJc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="63.616071428571423"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Afro" width="473" height="567"/>
+        <image name="Angry with Fang" width="289" height="293"/>
+        <image name="Awe" width="289" height="293"/>
+        <image name="Bangs" width="473" height="567"/>
+        <image name="Bangs 2" width="473" height="567"/>
+        <image name="Bantu Knots" width="473" height="567"/>
+        <image name="Bear" width="473" height="567"/>
+        <image name="Blank" width="289" height="293"/>
+        <image name="Blazer Black Tee" width="818" height="733"/>
+        <image name="Bun" width="473" height="567"/>
+        <image name="Bun 2" width="473" height="567"/>
+        <image name="Buns" width="473" height="567"/>
+        <image name="Button Shirt 1" width="818" height="733"/>
+        <image name="Button Shirt 2" width="818" height="733"/>
+        <image name="Calm" width="289" height="293"/>
+        <image name="Cheeky" width="289" height="293"/>
+        <image name="Coffee" width="818" height="733"/>
+        <image name="Concerned" width="289" height="293"/>
+        <image name="Concerned Fear" width="289" height="293"/>
+        <image name="Contempt" width="289" height="293"/>
+        <image name="Cornrows" width="473" height="567"/>
+        <image name="Cornrows 2" width="473" height="567"/>
+        <image name="Cyclops" width="289" height="293"/>
+        <image name="Device" width="818" height="733"/>
+        <image name="Dress" width="818" height="733"/>
+        <image name="Driven" width="289" height="293"/>
+        <image name="Eating Happy" width="289" height="293"/>
+        <image name="Explaining" width="289" height="293"/>
+        <image name="Eyepatch" width="392" height="138"/>
+        <image name="Eyes Closed" width="289" height="293"/>
+        <image name="Fear" width="289" height="293"/>
+        <image name="Flat Top" width="473" height="567"/>
+        <image name="Flat Top Long" width="473" height="567"/>
+        <image name="Fur Jacket" width="818" height="733"/>
+        <image name="Gaming" width="818" height="733"/>
+        <image name="Glasses" width="392" height="138"/>
+        <image name="Glasses 2" width="392" height="138"/>
+        <image name="Glasses 3" width="392" height="138"/>
+        <image name="Glasses 4" width="392" height="138"/>
+        <image name="Glasses 5" width="392" height="138"/>
+        <image name="Gray Bun" width="473" height="567"/>
+        <image name="Gray Medium" width="473" height="567"/>
+        <image name="Gray Short" width="473" height="567"/>
+        <image name="Gym Shirt" width="818" height="733"/>
+        <image name="Hectic" width="289" height="293"/>
+        <image name="Hijab" width="473" height="567"/>
+        <image name="Hoodie" width="818" height="733"/>
+        <image name="Killer" width="818" height="733"/>
+        <image name="Long Afro" width="473" height="567"/>
+        <image name="Long Bangs" width="473" height="567"/>
+        <image name="Loving Grin 1" width="289" height="293"/>
+        <image name="Loving Grin 2" width="289" height="293"/>
+        <image name="Macbook" width="818" height="733"/>
+        <image name="Old" width="289" height="293"/>
+        <image name="Paper" width="818" height="733"/>
+        <image name="Pointing Up" width="818" height="733"/>
+        <image name="Polka Dot Jacket" width="818" height="733"/>
+        <image name="Polo and Sweater" width="818" height="733"/>
+        <image name="Rage" width="289" height="293"/>
+        <image name="Serious" width="289" height="293"/>
+        <image name="Shirt and Coat" width="818" height="733"/>
+        <image name="Smile Big" width="289" height="293"/>
+        <image name="Sporty Tee" width="818" height="733"/>
+        <image name="Striped Pocket Tee" width="818" height="733"/>
+        <image name="Striped Tee" width="818" height="733"/>
+        <image name="Sunglasses" width="392" height="138"/>
+        <image name="Sunglasses 2" width="392" height="138"/>
+        <image name="Sweater" width="818" height="733"/>
+        <image name="Sweater Dots" width="818" height="733"/>
+        <image name="Tee 1" width="818" height="733"/>
+        <image name="Tee 2" width="818" height="733"/>
+        <image name="Tee Arms Crossed" width="818" height="733"/>
+        <image name="Tee Selena" width="818" height="733"/>
+        <image name="Thunder T-Shirt" width="818" height="733"/>
+        <image name="Turtleneck" width="818" height="733"/>
+        <image name="Whatever" width="818" height="733"/>
+        <image name="hat-beanie" width="473" height="567"/>
+        <image name="hat-hip" width="473" height="567"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
